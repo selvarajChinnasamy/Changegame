@@ -1,0 +1,7 @@
+<mat-grid-list cols="3"  rowHeight="2:1">
+  <div *ngFor="let color of colors;let i=index;">
+  <mat-grid-tile [style.background-color]="color" (click)="Plays(i)">{{color}}</mat-grid-tile>
+</div>
+</mat-grid-list>
+
+<mat-chip color="primary" selected="true">Score:{{score}}</mat-chip>
